@@ -5,3 +5,8 @@ export interface NavsTyps {
   url: string;
   scrapable: boolean;
 }
+
+export interface HeadlinesType {
+  id: string;
+  title: string;
+}

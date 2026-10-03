@@ -1,8 +1,10 @@
+import LatestHeadlines from "@/components/LatestHeadlines";
+
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <LatestHeadlines/>
+    </>
   );
 };
 
