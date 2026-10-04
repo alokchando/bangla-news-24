@@ -10,3 +10,10 @@ export interface HeadlinesType {
   id: string;
   title: string;
 }
+export interface MostReadType {
+  category: string;
+  id: string;
+  title: string;
+  link: "string";
+  rank: number;
+}

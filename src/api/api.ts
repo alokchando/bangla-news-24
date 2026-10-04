@@ -10,3 +10,9 @@ export const LatestHeadlinesApi = async () => {
   const res = await response.json();
   return res.data;
 };
+
+export const MostReadApi = async () => {
+  const response = await fetch("https://news-api-v2.vercel.app/api/news/most-read");
+  const res = await response.json();
+  return res.data;
+};
