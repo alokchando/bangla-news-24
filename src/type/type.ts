@@ -17,3 +17,14 @@ export interface MostReadType {
   link: "string";
   rank: number;
 }
+
+export interface NewsItemType {
+
+    id: string;
+    imageUrl: string;
+    imageAlt: string;
+    title: string;
+    description: string;
+    link: string;
+    category: string;
+}
