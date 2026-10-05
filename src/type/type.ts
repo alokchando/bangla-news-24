@@ -18,13 +18,20 @@ export interface MostReadType {
   rank: number;
 }
 
-export interface NewsItemType {
 
-    id: string;
-    imageUrl: string;
-    imageAlt: string;
-    title: string;
-    description: string;
-    link: string;
-    category: string;
+export interface NewsItemType {
+  id: string;
+  imageUrl: string;
+  imageAlt: string;
+  title: string;
+  description: string;
+  link: string;
+  category: string;
+  lastPublished: string;
+}
+
+export interface NewsSectionType {
+  title: string;
+  curationId: string;
+  articles: NewsItemType[];
 }
