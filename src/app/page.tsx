@@ -1,4 +1,4 @@
-import { HomePageApi } from "@/api/api";
+import { HomePageApi } from "@/app/api/api";
 import LatestHeadlines from "@/components/LatestHeadlines";
 import MainNews from "@/components/MainNews";
 import MostRead from "@/components/MostRead";

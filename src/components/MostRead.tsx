@@ -1,4 +1,4 @@
-import { MostReadApi } from "@/api/api";
+import { MostReadApi } from "@/app/api/api";
 import Link from "next/link";
 import React from "react";
 

@@ -1,4 +1,4 @@
-import { DetailsNews } from "@/api/api";
+import { DetailsNews } from "@/app/api/api";
 import Image from "next/image";
 import Link from "next/link";
 import { DetailsNewsType } from "@/type/type";
@@ -14,7 +14,6 @@ const Page = async ({ params }: PageProps) => {
 
   const data: DetailsNewsType = await DetailsNews(id);
 
-  
   return (
     <main className="min-h-screen bg-[#080808] text-white">
       <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
@@ -26,7 +25,6 @@ const Page = async ({ params }: PageProps) => {
           <span className="text-lg">←</span>
           Back to News
         </Link>
-
 
         {/* Title */}
         <h1 className="max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">

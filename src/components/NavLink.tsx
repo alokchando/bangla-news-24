@@ -1,4 +1,4 @@
-import { Navlinks } from "@/api/api";
+import { Navlinks } from "@/app/api/api";
 import Link from "next/link";
 
 const Navlink = async () => {
@@ -9,7 +9,6 @@ const Navlink = async () => {
   return (
     <nav className="border-t border-zinc-900">
       <div className="mx-auto flex max-w-7xl items-center gap-8 overflow-x-auto px-6 py-4">
-        
         <Link
           href="/"
           className="whitespace-nowrap text-sm font-semibold text-red-500 transition hover:text-red-400"

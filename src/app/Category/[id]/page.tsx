@@ -1,12 +1,10 @@
-import { OneCategoryApi } from "@/api/api";
+import { OneCategoryApi } from "@/app/api/api";
 import NewsCard from "@/components/NewsCard";
 import { NewsItemType } from "@/type/type";
 
-const Category = async ({ params }: {params: Promise<{ id: string }>;
-}) => {
+const Category = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
   const category = await OneCategoryApi(id);
-
 
   return (
     <main className="min-h-screen bg-black text-zinc-100">
