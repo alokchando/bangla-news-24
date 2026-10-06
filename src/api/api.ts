@@ -1,9 +1,9 @@
 import {
   CategoryType,
+  DetailsNewsType,
   HeadlinesType,
   MostReadType,
   NavsType,
-  NewsItemType,
   NewsSectionType,
 } from "@/type/type";
 
@@ -52,11 +52,22 @@ export const MostReadApi = async (): Promise<MostReadType[]> => {
 // One category
 export const OneCategoryApi = async (id: string): Promise<CategoryType> => {
   const response = await fetch(
-    
     `https://news-api-v2.vercel.app/api/category/${id}`,
   );
 
   const res = await response.json();
 
   return res;
+};
+
+// Details News
+export const DetailsNews = async (id: string): Promise<DetailsNewsType> => {
+  const response = await fetch(
+    `https://news-api-v2.vercel.app/api/article/${id}`,
+  );
+
+  const res = await response.json();
+
+  
+  return res.data;
 };

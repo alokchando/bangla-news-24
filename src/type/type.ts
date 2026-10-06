@@ -40,3 +40,9 @@ export interface CategoryType {
   title: string;
   data: NewsItemType[];
 }
+
+export interface DetailsNewsType {
+  title: string;
+  imageUrl: string;
+  text: string;
+}

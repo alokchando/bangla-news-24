@@ -20,7 +20,7 @@ const MostRead = async () => {
       <div className="divide-y divide-zinc-800">
         {data.map((item, index) => (
           <Link
-            href={item.link}
+            href={`/news/${item.id}`}
             key={item.id}
             className="group flex gap-4 py-4 first:pt-0 last:pb-0"
           >

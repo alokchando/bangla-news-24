@@ -12,9 +12,11 @@ const MainNews = ({ mainNews }: MainNewsProps) => {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 lg:grid-cols-3">
         
         {/* Main News */}
+
         <article className="lg:col-span-2">
+              <Link href={`/news/${firstNews.id}`}>
           
-          <Link href={firstNews.link} className="group block">
+          {/* <Link href={firstNews.link} className="group block"> */}
             
             <div className="overflow-hidden rounded-xl">
               
@@ -24,7 +26,7 @@ const MainNews = ({ mainNews }: MainNewsProps) => {
                 width={900}
                 height={550}
                 className="h-[420px] w-full object-cover transition duration-500 group-hover:scale-105"
-              />
+                />
             </div>
             <div className="mt-5">
               
@@ -41,7 +43,7 @@ const MainNews = ({ mainNews }: MainNewsProps) => {
                 {firstNews.description}
               </p>
             </div>
-          </Link>
+                </Link>
         </article>
         {/* Other News */}
         <div className="divide-y divide-gray-800 border-t border-gray-800 lg:border-t-0">
@@ -49,7 +51,7 @@ const MainNews = ({ mainNews }: MainNewsProps) => {
           {otherNews.slice(0, 5).map((item) => (
             <article key={item.id} className="py-5 first:pt-0">
               
-              <Link href={item.link} className="group block">
+              <Link href={`/news/${item.id}`} className="group block">
                 
                 <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-red-500">
                   

@@ -26,7 +26,7 @@ const formatBanglaDate = (dateString: string) => {
 const NewsCard = ({ news }: NewsCardProps) => {
   return (
     <article className="group border-b border-zinc-800 pb-5">
-      <Link href={news.link} className="grid grid-cols-3 gap-3">
+      <Link href={`/news/${news.id}`} className="grid grid-cols-3 gap-3">
         <div className="col-span-1 overflow-hidden rounded-md">
           <Image
             src={news.imageUrl}
