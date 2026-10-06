@@ -1,4 +1,5 @@
 import { LatestHeadlinesApi } from "@/api/api";
+import Link from "next/link";
 import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
 
@@ -32,9 +33,9 @@ const LatestHeadlines = async () => {
                   className="flex items-center gap-3 text-sm text-zinc-300"
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-red-500" />
-                  <span className="transition-colors hover:text-white">
+                  <Link href={`/news/${item.id}`} className="transition-colors hover:text-white">
                     {item.title}
-                  </span>
+                  </Link>
                 </div>
               ))}
             </div>
