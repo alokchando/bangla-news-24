@@ -14,7 +14,7 @@ export interface MostReadType {
   category: string;
   id: string;
   title: string;
-  link: "string";
+  link: string;
   rank: number;
 }
 
@@ -34,4 +34,11 @@ export interface NewsSectionType {
   title: string;
   curationId: string;
   articles: NewsItemType[];
+}
+
+export interface MostReadType {
+  id: string ;
+  title: string;
+  link: string;
+  category: string;
 }

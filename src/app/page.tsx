@@ -1,6 +1,7 @@
 import { HomePageApi } from "@/api/api";
 import LatestHeadlines from "@/components/LatestHeadlines";
 import MainNews from "@/components/MainNews";
+import MostRead from "@/components/MostRead";
 import NewsCard from "@/components/NewsCard";
 import { NewsSectionType } from "@/type/type";
 
@@ -47,7 +48,7 @@ const Page = async () => {
 
           {/* Most Read */}
           <aside className="hidden lg:block">
-            {/* Leave this section blank for now */}
+            <MostRead />
           </aside>
         </div>
       </div>
