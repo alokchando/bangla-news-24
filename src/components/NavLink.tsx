@@ -1,9 +1,8 @@
 import { Navlinks } from "@/api/api";
-import { NavsTyps } from "@/type/type";
 import Link from "next/link";
 
 const Navlink = async () => {
-  const data: NavsTyps[] = await Navlinks();
+  const data = await Navlinks();
 
   const filterData = data.filter((n) => n.scrapable);
 
@@ -21,7 +20,7 @@ const Navlink = async () => {
         {filterData.map((n) => (
           <Link
             key={n.slug}
-            href={n.slug}
+            href={`/Category/${n.slug}`}
             className="whitespace-nowrap text-sm font-medium text-zinc-400 transition hover:text-white"
           >
             {n.title}

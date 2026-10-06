@@ -1,10 +1,9 @@
 import { LatestHeadlinesApi } from "@/api/api";
-import { HeadlinesType } from "@/type/type";
 import MarqueeText from "react-marquee-text";
 import "react-marquee-text/dist/styles.css";
 
 const LatestHeadlines = async () => {
-  const data: HeadlinesType[] = await LatestHeadlinesApi();
+  const data = await LatestHeadlinesApi();
 
   return (
     <section className="border-y border-zinc-800 bg-zinc-950">

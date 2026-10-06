@@ -1,4 +1,4 @@
-export interface NavsTyps {
+export interface NavsType {
   slug: string;
   title: string;
   topicId: string | null;
@@ -10,14 +10,14 @@ export interface HeadlinesType {
   id: string;
   title: string;
 }
+
 export interface MostReadType {
-  category: string;
   id: string;
   title: string;
   link: string;
+  category: string;
   rank: number;
 }
-
 
 export interface NewsItemType {
   id: string;
@@ -36,9 +36,7 @@ export interface NewsSectionType {
   articles: NewsItemType[];
 }
 
-export interface MostReadType {
-  id: string ;
+export interface CategoryType {
   title: string;
-  link: string;
-  category: string;
+  data: NewsItemType[];
 }

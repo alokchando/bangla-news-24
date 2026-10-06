@@ -1,10 +1,9 @@
 import { MostReadApi } from "@/api/api";
-import { MostReadType } from "@/type/type";
 import Link from "next/link";
 import React from "react";
 
 const MostRead = async () => {
-  const data:MostReadType[] = await MostReadApi();
+  const data = await MostReadApi();
 
   return (
     <section className="rounded-xl border border-zinc-800 bg-zinc-950 p-5">
