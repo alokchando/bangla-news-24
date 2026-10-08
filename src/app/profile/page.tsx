@@ -21,7 +21,7 @@ const ProfileInfo = () => {
         {/* User Info */}
         <div className="flex items-center gap-4">
           {/* Avatar */}
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#ccff00] text-2xl font-bold text-black">
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#ff0000] text-2xl font-bold text-black">
             {initial}
           </div>
 
@@ -40,7 +40,7 @@ const ProfileInfo = () => {
           <button
             type="button"
             onClick={handleSignOut}
-            className="rounded-lg bg-[#ccff00] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#b8e600]"
+            className="rounded-lg bg-[#ff0000] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#ff0000]"
           >
             Sign Out
           </button>
