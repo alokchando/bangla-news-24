@@ -2,6 +2,7 @@ import { DetailsNews } from "@/app/api/api";
 import Image from "next/image";
 import Link from "next/link";
 import { DetailsNewsType } from "@/type/type";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{
@@ -13,6 +14,10 @@ const Page = async ({ params }: PageProps) => {
   const { id } = await params;
 
   const data: DetailsNewsType = await DetailsNews(id);
+
+  if (!data) {
+  notFound();
+}
 
   return (
     <main className="min-h-screen bg-[#080808] text-white">
