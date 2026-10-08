@@ -11,6 +11,7 @@ const UserInfo = () => {
     <div>
       
       {user ? (
+        <Link href={'/profile'}>
         <div className="flex items-center gap-3">
           
           {/* User Info */}
@@ -39,6 +40,7 @@ const UserInfo = () => {
             সাইন আউট
           </button>
         </div>
+        </Link>
       ) : (
         <div className="flex items-center gap-2">
           
